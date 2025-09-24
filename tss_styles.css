@@ -1,4 +1,10 @@
 @charset "utf-8";
+@import url(tss_layout.css);
+@font-face {
+   font-family:'Quicksand';
+   src: url('Quicksand-Regular.woff') format('woff'),
+        url('Quicksand-Regular.ttf') format('truetype');
+}
 
 /*
    New Perspectives on HTML5 and CSS3, 7th Edition
@@ -7,7 +13,7 @@
    
    TSS Typographic Style Sheet
    Author: Inder Deep
-   Date:   2025-09-22
+   Date: 2025-09-22
    
    Filename: tss_styles.css
 
@@ -16,34 +22,88 @@
 
 
 /* HTML and Body Styles */
+   html{
+      background-color: hsl(27, 72%, 72%); 
+   }
 
+   body{
+      color: rgb(91,91,91); 
+      background-color: ivory;
+      font-family: Verdana, Geneva, sans-serif;
+   }
 
 
 
 
 /* Heading Styles */
+h1{
+   font-size: 2.2em;
+}
+h2{
+   font-size: 1.5em;
+}
+h1,h2 {
+   font-family: Quicksand, Verdana, Geneva, sans-serif;
+}
 
+article#about_tss h1{
+   color: white;
+   background-color: rgb(222,128, 60);
+}
 
+article#about_tss h2{
+   color: white;
+   background-color:rgb(235,177,131);
+}
+
+article.syllabus h1, article.syllabus h2{
+   background-color: rgb(255, 185, 255);
+   color: rgb(101,101,101);
+}
+article.syllabus ol{
+   list-style-type: upper-alpha;
+}
+
+article.syllabus ol ol{
+   list-style-type: upper-alpha;
+}
+
+article.syllabus ol ol ol{
+   list-style-type: upper-alpha;
+}
 
 
 
 
 /* Aside and Blockquote Styles */
 
-
+aside{
+   font-size: 0.8em;
+}
 
 
 
 /* Navigation Styles */	
 
+ nav{
+   font-size: 0.8em;
+}
+nav > ul {
+ list-style-type: none;
+ line-height: 2em;
 
-
+}
+nav a{
+   text-decoration: none;
+}
 
 
 /* List Styles */
 
 
-
+article#about_tss ul{
+   list-style-image: url(runicorn.png);
+}
 
 
 /* Footer Styles */
