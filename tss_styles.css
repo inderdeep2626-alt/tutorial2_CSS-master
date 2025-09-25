@@ -115,6 +115,15 @@ article#about_tss ul{
    list-style-image: url(runicorn.png);
 }
 
+/*using structural pseudo-class*/
+article#about_tss ul li:nth-of-type(2){
+   list-style-image: url(bikeicon.png);
+}
+
+article#about_tss ul li:last-of-type(2){
+   list-style-image: url(swimicon.png);
+}
+
 
 /* Footer Styles */
 
